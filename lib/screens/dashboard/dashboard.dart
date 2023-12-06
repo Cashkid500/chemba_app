@@ -34,17 +34,17 @@ class _DashboardScreenState extends State<DashboardScreen> {
     // Scaffold(
       // body: 
       SingleChildScrollView(
-        padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
+        padding:const EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
               width: 248,
               height: 85.56,
-              margin: EdgeInsets.only(top: 40, left: 15),
+              margin:const EdgeInsets.only(top: 40, left: 15),
               child: Image.asset('assets/images/chemba.png'),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             Row(
@@ -59,17 +59,16 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   child: Container(
                     width: 87.0,
                     height: 42.0,
-                    padding: EdgeInsets.all(8.0),
+                    padding:const EdgeInsets.all(8.0),
                     decoration: BoxDecoration(
-                      color: toggleTab == 1 ? Color(0xff528265) : null,
+                      color: toggleTab == 1 ?const Color(0xff528265) : null,
                       borderRadius: BorderRadius.circular(10.0),
                       border: Border.all(
-                        // Set the border color here
                         width: toggleTab == 1
                             ? 0
-                            : 2.0, // Set the border width here
+                            : 2.0, 
                         style: BorderStyle
-                            .solid, // Set the border style (solid, dashed, dotted, etc.)
+                            .solid, 
                       ),
                     ),
                     child: Center(
@@ -93,17 +92,16 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   child: Container(
                     width: 87.0,
                     height: 42,
-                    padding: EdgeInsets.all(8.0),
+                    padding:const EdgeInsets.all(8.0),
                     decoration: BoxDecoration(
-                      color: toggleTab == 2 ? Color(0xff528265) : null,
+                      color: toggleTab == 2 ?const Color(0xff528265) : null,
                       borderRadius: BorderRadius.circular(10.0),
                       border: Border.all(
-                        // Set the border color here
                         width: toggleTab == 2
                             ? 0
-                            : 2.0, // Set the border width here
+                            : 2.0, 
                         style: BorderStyle
-                            .solid, // Set the border style (solid, dashed, dotted, etc.)
+                            .solid, 
                       ),
                     ),
                     child: Center(
@@ -126,17 +124,16 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   child: Container(
                     width: 87.0,
                     height: 42,
-                    padding: EdgeInsets.all(8.0),
+                    padding:const EdgeInsets.all(8.0),
                     decoration: BoxDecoration(
-                      color: toggleTab == 3 ? Color(0xff528265) : null,
+                      color: toggleTab == 3 ?const Color(0xff528265) : null,
                       borderRadius: BorderRadius.circular(10),
                       border: Border.all(
-                        // Set the border color here
                         width: toggleTab == 3
                             ? 0
-                            : 2.0, // Set the border width here
+                            : 2.0, 
                         style: BorderStyle
-                            .solid, // Set the border style (solid, dashed, dotted, etc.)
+                            .solid, 
                       ),
                     ),
                     child: Center(
@@ -157,14 +154,14 @@ class _DashboardScreenState extends State<DashboardScreen> {
             if (toggleTab == 1)
               Column(
                 children: [
-                  Padding(
+                  const Padding(
                     padding: EdgeInsets.only(top: 30),
                   ),
                   Center(child: Image.asset('assets/images/Sanitation.png')),
-                  SizedBox(
+                  const SizedBox(
                     height: 4,
                   ),
-                  Center(
+                  const Center(
                     child: Text(
                       'Kibera Clean up 16th May 2023',
                       style: TextStyle(
@@ -174,14 +171,14 @@ class _DashboardScreenState extends State<DashboardScreen> {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 6,
                   ),
                   Center(child: Image.asset('assets/images/Blank 1.png')),
-                  SizedBox(
+                  const SizedBox(
                     height: 4,
                   ),
-                  Center(
+                  const Center(
                     child: Text(
                       'Kisumu Recycling Bins installation\n                 19th May 2023',
                       style: TextStyle(
@@ -191,7 +188,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 8,
                   ),
                   Center(child: Image.asset('assets/images/Blank 2.png')),
@@ -213,19 +210,19 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         Container(
                           width: 298,
                           height: 44,
-                          padding: EdgeInsets.only(
+                          padding:const EdgeInsets.only(
                               left: 5,
-                              right: 10), // Add right padding to the text
+                              right: 10), 
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
-                            color: Color(0xffD2D9D1),
+                            color:const Color(0xffD2D9D1),
                           ),
                           child: Row(
                             children: [
-                              Expanded(
+                              const Expanded(
                                 child: Padding(
                                   padding: EdgeInsets.only(
-                                      left: 4), // Add left padding to the text
+                                      left: 4), 
                                   child: Text(
                                     'What is Chemba and how does it work?',
                                     style: TextStyle(
@@ -236,8 +233,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsets.only(
-                                    right: 4), // Add right padding to the image
+                                padding:const EdgeInsets.only(
+                                    right: 4),
                                 child: Image.asset(
                                     'assets/images/File Download.png'),
                               ),
@@ -256,19 +253,19 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         Container(
                           width: 298,
                           height: 44,
-                          padding: EdgeInsets.only(
+                          padding:const EdgeInsets.only(
                               left: 5,
-                              right: 10), // Add right padding to the text
+                              right: 10), 
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
-                            color: Color(0xffD2D9D1),
+                            color:const Color(0xffD2D9D1),
                           ),
                           child: Row(
                             children: [
-                              Expanded(
+                              const Expanded(
                                 child: Padding(
                                   padding: EdgeInsets.only(
-                                      left: 4), // Add left padding to the text
+                                      left: 4),
                                   child: Text(
                                     'What is Chemba and how does it work?',
                                     style: TextStyle(
@@ -279,8 +276,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsets.only(
-                                    right: 4), // Add right padding to the image
+                                padding:const EdgeInsets.only(
+                                    right: 4), 
                                 child: Image.asset(
                                     'assets/images/File Download.png'),
                               ),
@@ -299,19 +296,19 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         Container(
                           width: 298,
                           height: 44,
-                          padding: EdgeInsets.only(
+                          padding:const EdgeInsets.only(
                               left: 5,
-                              right: 10), // Add right padding to the text
+                              right: 10), 
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
-                            color: Color(0xffD2D9D1),
+                            color:const Color(0xffD2D9D1),
                           ),
                           child: Row(
                             children: [
-                              Expanded(
+                              const Expanded(
                                 child: Padding(
                                   padding: EdgeInsets.only(
-                                      left: 4), // Add left padding to the text
+                                      left: 4),
                                   child: Text(
                                     'What is Chemba and how does it work?',
                                     style: TextStyle(
@@ -322,8 +319,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsets.only(
-                                    right: 4), // Add right padding to the image
+                                padding:const EdgeInsets.only(
+                                    right: 4),
                                 child: Image.asset(
                                     'assets/images/File Download.png'),
                               ),
@@ -342,19 +339,19 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         Container(
                           width: 298,
                           height: 44,
-                          padding: EdgeInsets.only(
+                          padding:const EdgeInsets.only(
                               left: 5,
-                              right: 10), // Add right padding to the text
+                              right: 10), 
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
-                            color: Color(0xffD2D9D1),
+                            color:const Color(0xffD2D9D1),
                           ),
                           child: Row(
                             children: [
-                              Expanded(
+                              const Expanded(
                                 child: Padding(
                                   padding: EdgeInsets.only(
-                                      left: 4), // Add left padding to the text
+                                      left: 4),
                                   child: Text(
                                     'What is Chemba and how does it work?',
                                     style: TextStyle(
@@ -365,8 +362,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsets.only(
-                                    right: 4), // Add right padding to the image
+                                padding:const EdgeInsets.only(
+                                    right: 4),
                                 child: Image.asset(
                                     'assets/images/File Download.png'),
                               ),
@@ -384,19 +381,19 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         Container(
                           width: 298,
                           height: 44,
-                          padding: EdgeInsets.only(
+                          padding:const EdgeInsets.only(
                               left: 5,
-                              right: 10), // Add right padding to the text
+                              right: 10), 
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
-                            color: Color(0xffD2D9D1),
+                            color:const Color(0xffD2D9D1),
                           ),
                           child: Row(
                             children: [
-                              Expanded(
+                              const Expanded(
                                 child: Padding(
                                   padding: EdgeInsets.only(
-                                      left: 4), // Add left padding to the text
+                                      left: 4),
                                   child: Text(
                                     'What is Chemba and how does it work?',
                                     style: TextStyle(
@@ -407,8 +404,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsets.only(
-                                    right: 4), // Add right padding to the image
+                                padding:const EdgeInsets.only(
+                                    right: 4),
                                 child: Image.asset(
                                     'assets/images/File Download.png'),
                               ),
@@ -426,19 +423,19 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         Container(
                           width: 298,
                           height: 44,
-                          padding: EdgeInsets.only(
+                          padding:const EdgeInsets.only(
                               left: 5,
-                              right: 10), // Add right padding to the text
+                              right: 10), 
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
-                            color: Color(0xffD2D9D1),
+                            color:const Color(0xffD2D9D1),
                           ),
                           child: Row(
                             children: [
-                              Expanded(
+                              const Expanded(
                                 child: Padding(
                                   padding: EdgeInsets.only(
-                                      left: 4), // Add left padding to the text
+                                      left: 4), 
                                   child: Text(
                                     'What is Chemba and how does it work?',
                                     style: TextStyle(
@@ -449,8 +446,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsets.only(
-                                    right: 4), // Add right padding to the image
+                                padding:const EdgeInsets.only(
+                                    right: 4),
                                 child: Image.asset(
                                     'assets/images/File Download.png'),
                               ),
@@ -468,19 +465,19 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         Container(
                           width: 298,
                           height: 44,
-                          padding: EdgeInsets.only(
+                          padding:const EdgeInsets.only(
                               left: 5,
-                              right: 10), // Add right padding to the text
+                              right: 10),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
-                            color: Color(0xffD2D9D1),
+                            color:const Color(0xffD2D9D1),
                           ),
                           child: Row(
                             children: [
-                              Expanded(
+                              const Expanded(
                                 child: Padding(
                                   padding: EdgeInsets.only(
-                                      left: 4), // Add left padding to the text
+                                      left: 4), 
                                   child: Text(
                                     'What is Chemba and how does it work?',
                                     style: TextStyle(
@@ -491,8 +488,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsets.only(
-                                    right: 4), // Add right padding to the image
+                                padding:const EdgeInsets.only(
+                                    right: 4),
                                 child: Image.asset(
                                     'assets/images/File Download.png'),
                               ),
@@ -510,19 +507,19 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         Container(
                           width: 298,
                           height: 44,
-                          padding: EdgeInsets.only(
+                          padding:const EdgeInsets.only(
                               left: 5,
-                              right: 10), // Add right padding to the text
+                              right: 10),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
-                            color: Color(0xffD2D9D1),
+                            color:const Color(0xffD2D9D1),
                           ),
                           child: Row(
                             children: [
-                              Expanded(
+                              const Expanded(
                                 child: Padding(
                                   padding: EdgeInsets.only(
-                                      left: 4), // Add left padding to the text
+                                      left: 4), 
                                   child: Text(
                                     'What is Chemba and how does it work?',
                                     style: TextStyle(
@@ -533,8 +530,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsets.only(
-                                    right: 4), // Add right padding to the image
+                                padding:const EdgeInsets.only(
+                                    right: 4),
                                 child: Image.asset(
                                     'assets/images/File Download.png'),
                               ),
@@ -552,19 +549,19 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         Container(
                           width: 298,
                           height: 44,
-                          padding: EdgeInsets.only(
+                          padding:const EdgeInsets.only(
                               left: 5,
-                              right: 10), // Add right padding to the text
+                              right: 10), 
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
-                            color: Color(0xffD2D9D1),
+                            color:const Color(0xffD2D9D1),
                           ),
                           child: Row(
                             children: [
-                              Expanded(
+                              const Expanded(
                                 child: Padding(
                                   padding: EdgeInsets.only(
-                                      left: 4), // Add left padding to the text
+                                      left: 4),
                                   child: Text(
                                     'What is Chemba and how does it work?',
                                     style: TextStyle(
@@ -575,8 +572,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsets.only(
-                                    right: 4), // Add right padding to the image
+                                padding:const EdgeInsets.only(
+                                    right: 4),
                                 child: Image.asset(
                                     'assets/images/File Download.png'),
                               ),
@@ -588,7 +585,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   ),
                 ],
               ),
-              //.......................... Educate
+              
+              // Educate
               if (toggleTab == 3) 
               Column(mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -601,15 +599,15 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         Container(
                           width: 298,
                           height: 60,
-                          padding: EdgeInsets.only(
-                              left: 30), // Add padding to the text
+                          padding:const EdgeInsets.only(
+                              left: 30),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
-                            color: Color(0xffD2D9D1),
+                            color:const Color(0xffD2D9D1),
                           ),
                           child: Row(
                             children: [
-                              Expanded(
+                              const Expanded(
                                 child: Text(
                                   'What is waste?',
                                   style: TextStyle(
@@ -619,9 +617,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsets.only(
+                                padding:const EdgeInsets.only(
                                     right:
-                                        10), // Add right padding to the image
+                                        10), 
                                 child: Image.asset(
                                     'assets/images/File Download.png'),
                               ),
@@ -643,17 +641,17 @@ class _DashboardScreenState extends State<DashboardScreen> {
                               child: Container(
                                 width: 298,
                                 height: 217,
-                                padding: EdgeInsets.only(left: 30, right: 10, top: 30),
+                                padding:const EdgeInsets.only(left: 30, right: 10, top: 30),
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(10),
-                                  color: Color(0xffD2D9D1),
+                                  color:const Color(0xffD2D9D1),
                                 ),
                                 child: Column(
                                   children: [
                                     Row(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-                                        Expanded(
+                                        const Expanded(
                                           child: Text(
                                             'Waste Management',
                                             style: TextStyle(
@@ -664,7 +662,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                           ),
                                         ),
                                         Padding(
-                                          padding: EdgeInsets.only(
+                                          padding:const EdgeInsets.only(
                                               right:
                                                   10),
                                             child: Image.asset(
@@ -672,10 +670,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                           ),
                                         ],
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 15,
                                     ),
-                                    Text("This are activities that are aimed in the reduction of adverse effects of waste on human health, the environment, planetary resources and aesthetics, by several methods", style: TextStyle(
+                                    const Text("This are activities that are aimed in the reduction of adverse effects of waste on human health, the environment, planetary resources and aesthetics, by several methods", style: TextStyle(
                                         fontSize: 18,
                                         color: Colors.black,
                                         fontWeight: FontWeight.w500,
@@ -687,8 +685,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             ),
                           ],
                         ),
-                        
-                      ],
+                       ],
                     ),
                   ),
 
@@ -703,16 +700,16 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         Container(
                           width: 298,
                           height: 63,
-                          padding: EdgeInsets.only(
+                          padding:const EdgeInsets.only(
                               left: 30,
-                              right: 10), // Add right padding to the text
+                              right: 10),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
-                            color: Color(0xffD2D9D1),
+                            color:const Color(0xffD2D9D1),
                           ),
                           child: Row(
                             children: [
-                              Expanded(
+                              const Expanded(
                                 child: Text(
                                   'Importance of waste management',
                                   style: TextStyle(
@@ -722,9 +719,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsets.only(
+                                padding:const EdgeInsets.only(
                                     right:
-                                        5), // Add right padding to the image
+                                        5),
                                 child: Image.asset(
                                     'assets/images/File Download.png'),
                               ),
@@ -744,16 +741,16 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         Container(
                           width: 298,
                           height: 60,
-                          padding: EdgeInsets.only(
+                          padding:const EdgeInsets.only(
                               left: 30,
-                              right: 10), // Add right padding to the text
+                              right: 10), 
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
-                            color: Color(0xffD2D9D1),
+                            color:const Color(0xffD2D9D1),
                           ),
                           child: Row(
                             children: [
-                              Expanded(
+                              const Expanded(
                                 child: Text(
                                   'Types of waste',
                                   style: TextStyle(
@@ -769,9 +766,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
                       ],
                     ),
                   ),
-          ],
-          ),
-          ],
+                ],
+              ),
+            ],
         ),
     );
   }

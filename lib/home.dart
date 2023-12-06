@@ -1,6 +1,5 @@
+import 'package:chemba_app/screens/registration/reg.dart';
 import 'package:flutter/material.dart';
-
-import 'screens/registration/reg.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -143,7 +142,7 @@ class _HomePageState extends State<HomePage> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => RegistrationScreen()),
+                        builder: (context) =>const RegistrationScreen()),
                   );
                 },
                 child: Container(
@@ -154,7 +153,7 @@ class _HomePageState extends State<HomePage> {
                     color: Color(0xff528265),
                     borderRadius: BorderRadius.circular(5.0),
                   ),
-                  child: Text(
+                  child:const Text(
                     "Sign Up",
                     style: TextStyle(
                       color: Colors.white,
@@ -166,10 +165,10 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
 
-            Padding(
+            const Padding(
               padding: EdgeInsets.only(top: 12),
-              child: Center(
-                child: Text(
+              child:const Center(
+                child:const Text(
                   "Already have an account?",
                   textAlign: TextAlign.center,
                   style: TextStyle(
@@ -181,10 +180,10 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
 
-            Padding(
+            const Padding(
               padding: EdgeInsets.only(top: 12),
-              child: Center(
-                child: Text(
+              child:const Center(
+                child:const Text(
                   "Sign in",
                   textAlign: TextAlign.center,
                   style: TextStyle(

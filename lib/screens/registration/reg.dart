@@ -1,4 +1,3 @@
-import 'package:chemba_app/screens/dashboard/dashboard.dart';
 import 'package:chemba_app/screens/profile/profile.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +18,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Padding(
-            padding: EdgeInsets.only(top: 100, left: 62),
+            padding:const EdgeInsets.only(top: 100, left: 62),
             child: SizedBox(
               width: 248,
               height: 85.56,
@@ -29,22 +28,22 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
 
           // Email TextFormField
           Padding(
-            padding: EdgeInsets.only(top: 50, left: 67),
+            padding:const EdgeInsets.only(top: 50, left: 67),
             child: SizedBox(
               width: 239,
               height: 63,
               child: TextField(
                 decoration: InputDecoration(
                   labelText: 'Email',
-                  labelStyle: TextStyle(
+                  labelStyle:const TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 16,
                   ),
-                  fillColor: Color(0xffD2D9D1),
+                  fillColor:const Color(0xffD2D9D1),
                   filled: true,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(5.0),
-                    borderSide: BorderSide(
+                    borderSide:const BorderSide(
                       color: Colors.black,
                       width: 1.0,
                     ),
@@ -56,22 +55,22 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
 
           // Password TextFormField
           Padding(
-            padding: EdgeInsets.only(top: 20, left: 67),
+            padding:const EdgeInsets.only(top: 20, left: 67),
             child: SizedBox(
               width: 239,
               height: 63,
               child: TextField(
                 decoration: InputDecoration(
                   labelText: 'Password',
-                  labelStyle: TextStyle(
+                  labelStyle:const TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 16,
                   ),
-                  fillColor: Color(0xffD2D9D1),
+                  fillColor:const Color(0xffD2D9D1),
                   filled: true,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(5.0),
-                    borderSide: BorderSide(
+                    borderSide:const BorderSide(
                       color: Colors.black,
                       width: 1.0,
                     ),
@@ -81,8 +80,8 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
             ),
           ),
 
-          SizedBox(height: 20,),
-          Padding(
+          const SizedBox(height: 20,),
+          const Padding(
             padding: EdgeInsets.only(left: 195),
             child: Text(
               "Forgot Password?",
@@ -96,7 +95,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
 
           // Sign Up Button
           Padding(
-            padding: EdgeInsets.only(top: 20, left: 67),
+            padding:const EdgeInsets.only(top: 20, left: 67),
             child: InkWell(
                 onTap: () {
                   Navigator.push(
@@ -110,10 +109,10 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
               height: 63,
               alignment: Alignment.center,
               decoration: BoxDecoration(
-                color: Color(0xff528265),
+                color:const Color(0xff528265),
                 borderRadius: BorderRadius.circular(5.0),
               ),
-              child: Text(
+              child:const Text(
                 "Sign Up",
                 style: TextStyle(
                   color: Colors.white,
@@ -125,7 +124,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           ),
           ),
 
-          Padding(
+          const Padding(
             padding: EdgeInsets.only(top: 12),
             child: Center(
               child: Text(
@@ -140,7 +139,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
             ),
           ),
 
-          Padding(
+          const Padding(
             padding: EdgeInsets.only(top: 12),
             child: Center(
               child: Text(

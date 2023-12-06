@@ -10,20 +10,20 @@ class Support extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 645, // Adjusted the height to accommodate the content
-      margin: EdgeInsets.only(top: 41, left: 15),
-      padding: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+      margin:const EdgeInsets.only(top: 41, left: 15),
+      padding:const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
       child: Column(
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Image.asset('assets/images/chemba.png', height: 40),
-              SizedBox(width: 10),
+              const SizedBox(width: 10),
               Expanded(
                 child: Text(
                   'Help & Support',
                   style: GoogleFonts.manrope(
-                    textStyle: TextStyle(
+                    textStyle:const TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.w700,
                       color: Color(0xff528265),
@@ -36,14 +36,14 @@ class Support extends StatelessWidget {
           Container(
             height: 50,
             width: 314,
-            padding: EdgeInsets.only(
+            padding:const EdgeInsets.only(
               left: 15,
               top: 10,
             ),
             child: Text(
               "We’re always here to answer any of your questions, and support of any kind.",
               style: GoogleFonts.manrope(
-                textStyle: TextStyle(
+                textStyle:const TextStyle(
                   fontSize: 14,
                   color: Colors.black,
                   fontWeight: FontWeight.w500,
@@ -56,18 +56,18 @@ class Support extends StatelessWidget {
             child: Container(
               width: 288,
               height: 60,
-              padding: EdgeInsets.only(left: 20, right: 20),
+              padding:const EdgeInsets.only(left: 20, right: 20),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: Color(0xffD2D9D1),
+                color:const Color(0xffD2D9D1),
               ),
               child: Row(
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(right: 15),
+                    padding:const EdgeInsets.only(right: 15),
                     child: Image.asset('assets/images/Chat.png'),
                   ),
-                  Expanded(
+                  const Expanded(
                     child: Text(
                       'Chat with Customer Support',
                       style: TextStyle(
@@ -86,22 +86,22 @@ class Support extends StatelessWidget {
             child: Container(
               width: 288,
               height: 60,
-              padding: EdgeInsets.only(left: 20, right: 20),
+              padding:const EdgeInsets.only(left: 20, right: 20),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: Color(0xffD2D9D1),
+                color:const Color(0xffD2D9D1),
               ),
               child: Row(
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(right: 15),
+                    padding:const EdgeInsets.only(right: 15),
                     child: Image.asset('assets/images/Mail.png'),
                   ),
                   Expanded(
                     child: Text(
                       'Send us an E-mail',
                       style: GoogleFonts.manrope(
-                        textStyle: TextStyle(
+                        textStyle:const TextStyle(
                           fontSize: 16,
                           color: Colors.black,
                           fontWeight: FontWeight.w500,
@@ -114,12 +114,12 @@ class Support extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 100.0, bottom: 20.0),
+            padding:const EdgeInsets.only(top: 100.0, bottom: 20.0),
             child: Center(
               child: Text(
                 "Connect with us on:",
                 style: GoogleFonts.manrope(
-                  textStyle: TextStyle(
+                  textStyle:const TextStyle(
                     color: Color(0xff528265),
                     fontSize: 20,
                     fontWeight: FontWeight.w600,
@@ -140,19 +140,22 @@ class Support extends StatelessWidget {
                   children: [
                     SizedBox(
                         width: 50,
-                        child: Image.asset('assets/images/Facebook.png')),
+                        child: Image.asset('assets/images/Facebook.png')
+                    ),
                     SizedBox(
                         width: 50,
-                        child: Image.asset('assets/images/Twitter.png')),
+                        child: Image.asset('assets/images/Twitter.png')
+                    ),
                     SizedBox(
                         width: 50,
-                        child: Image.asset('assets/images/Linkedin.png')),
+                        child: Image.asset('assets/images/Linkedin.png')
+                    ),
                   ],
                 ),
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
           Center(
@@ -167,7 +170,7 @@ class Support extends StatelessWidget {
                   SizedBox(
                       width: 50,
                       child: Image.asset('assets/images/YouTube.png')),
-                  SizedBox(
+                  const SizedBox(
                     width: 50,
                   ),
                 ],
